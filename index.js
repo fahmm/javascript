@@ -1,3 +1,12 @@
-var message = "hello Copding"
+var message = "hello Copding";
+let msg1 = "hello";
+const msg2 = "hai"; 
+
+if (true) {
+var message = 1;
+let msg1 = 2;
+console.log("Testing ",msg1)
+}
 
 console.log(message)
+console.log(msg1)
