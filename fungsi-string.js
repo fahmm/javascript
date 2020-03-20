@@ -34,7 +34,7 @@ function substring(){
 }
 substring()
 
-//fungsi string slice mirip substr
+//fungsi string slice mirip substr/ mengcopy ke var lain
 function slice(){
 	var aku = 'saya belajar di pasar';
 	console.log(aku.slice(5));
@@ -93,3 +93,60 @@ function repeatya(){
 }
 
 repeatya()
+
+//fungsi konversi ke string
+function konversi(){
+	var kon = new String("belajar yah");
+	console.log(typeof kon);
+	console.log(kon);
+	var konf = kon.toString();
+	console.log(typeof konf);
+	console.log(konf);
+	var konf2 = kon.valueOf();
+	console.log(typeof konf2);
+	console.log(konf2);
+
+}
+
+konversi()
+
+//fungsi string index of unrtuk mengetahui urutan indexnya
+function indexoff(){
+	var isi = "saya beajar di rumah";
+	console.log(isi.indexOf("beajar"));
+}
+indexoff()
+
+//fungsi string last index of untuk mengetahui urutan index tp yang diambil yang terjauh atau yg terakhir
+
+function last(){
+	var isi = "saya beajar di rumah beajar";
+	console.log(isi.lastIndexOf("beajar",5)); //nilai angka berfungsi sebagai startnya di index
+}
+last()
+
+//fungsi string search sama fungsi dengan indexof
+
+function cari(){
+	var isi = "saya beajar di rumah teman";
+	console.log(isi.search("beajar"));
+	console.log(isi.search(/beajar/));
+}
+cari();
+
+//fungsi string match untuk mecari reguler expression hasilnya berupa array
+
+function mat(){
+	var isi = "saya belajar di rumah teman";
+	console.log(isi.match("rumah"));
+	console.log(isi.match(/teman/));
+}
+mat();
+
+//fungsi string replace
+function isi(){
+	var cari = "ini isi dari data program"
+	console.log(cari.replace("program","penjualan"))
+}
+isi()
+
